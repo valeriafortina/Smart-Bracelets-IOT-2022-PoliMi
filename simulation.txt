@@ -1,0 +1,796 @@
+********************************************
+*                                          *
+*             TOSSIM Script                *
+*                                          *
+********************************************
+Initializing mac...
+Initializing radio channels....
+    using topology file: topology.txt
+    using noise file: meyer-heavy.txt
+Initializing simulator....
+Activate debug message on channel Radio
+Activate debug message on channel Pairing
+Activate debug message on channel TimerPairing
+Activate debug message on channel Radio_ack
+Activate debug message on channel Radio_sent
+Activate debug message on channel Radio_rec
+Activate debug message on channel Radio_pack
+Activate debug message on channel OperationalMode
+Activate debug message on channel Timer10s
+Activate debug message on channel Timer60s
+Activate debug message on channel Sensors
+Activate debug message on channel Info
+Creating node 0...
+>>>Will boot at time 0 [sec]
+Creating node 1...
+>>>Will boot at time 0 [sec]
+Creating node 2...
+>>>Will boot at time 0 [sec]
+Creating node 3...
+>>>Will boot at time 0 [sec]
+Creating radio channels...
+>>>Setting radio channel from node  0  to node  1  with gain  -60.0  dBm
+>>>Setting radio channel from node  0  to node  2  with gain  -60.0  dBm
+>>>Setting radio channel from node  0  to node  3  with gain  -60.0  dBm
+>>>Setting radio channel from node  1  to node  0  with gain  -60.0  dBm
+>>>Setting radio channel from node  1  to node  2  with gain  -60.0  dBm
+>>>Setting radio channel from node  1  to node  3  with gain  -60.0  dBm
+>>>Setting radio channel from node  2  to node  0  with gain  -60.0  dBm
+>>>Setting radio channel from node  2  to node  1  with gain  -60.0  dBm
+>>>Setting radio channel from node  2  to node  3  with gain  -60.0  dBm
+>>>Setting radio channel from node  3  to node  0  with gain  -60.0  dBm
+>>>Setting radio channel from node  3  to node  1  with gain  -60.0  dBm
+>>>Setting radio channel from node  3  to node  2  with gain  -60.0  dBm
+Initializing Closest Pattern Matching (CPM)...
+Reading noise model data file: meyer-heavy.txt
+Loading:##Done!
+>>>Creating noise model for node: 0
+>>>Creating noise model for node: 1
+>>>Creating noise model for node: 2
+>>>Creating noise model for node: 3
+Start simulation with TOSSIM! 
+
+
+
+DEBUG (0): ATTENTION: Radio device is ready
+DEBUG (0): ***PAIRING Phase has started***
+
+DEBUG (1): ATTENTION: Radio device is ready
+DEBUG (1): ***PAIRING Phase has started***
+
+DEBUG (3): ATTENTION: Radio device is ready
+DEBUG (3): ***PAIRING Phase has started***
+
+DEBUG (2): ATTENTION: Radio device is ready
+DEBUG (2): ***PAIRING Phase has started***
+
+	**************************PAIRING*********************************
+DEBUG (0): ATTENTION: TimerPairing is fired at TIME: 0:0:0.244140635
+DEBUG (0): Preload KEY=HDSGAhdyqgi76h7dedgh , SENDING PAIRING MESSAGE 
+
+	**************************PAIRING*********************************
+DEBUG (2): ATTENTION: TimerPairing is fired at TIME: 0:0:0.244140635
+DEBUG (2): Preload KEY=BYTg6td7beggd67sa67v , SENDING PAIRING MESSAGE 
+
+	**************************PAIRING*********************************
+DEBUG (3): ATTENTION: TimerPairing is fired at TIME: 0:0:0.244140635
+DEBUG (3): Preload KEY=BYTg6td7beggd67sa67v , SENDING PAIRING MESSAGE 
+
+	**************************PAIRING*********************************
+DEBUG (1): ATTENTION: TimerPairing is fired at TIME: 0:0:0.244140635
+DEBUG (1): Preload KEY=HDSGAhdyqgi76h7dedgh , SENDING PAIRING MESSAGE 
+
+DEBUG (2): TIME 0:0:0.246871942 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 0, info: BYTg6td7beggd67sa67v
+		Message of PAIRING request received. Mote address: 3
+		BRACELET FOUND!
+
+DEBUG (1): TIME 0:0:0.246871942 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 0, info: BYTg6td7beggd67sa67v
+		Message for PAIRING request received. Mote address: 3
+		 !! WRONG BRACELET !! 
+
+DEBUG (0): TIME 0:0:0.246871942 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 0, info: BYTg6td7beggd67sa67v
+		Message for PAIRING request received. Mote address: 3
+		 !! WRONG BRACELET !! 
+
+DEBUG (3): Message sent!
+DEBUG (3): Random key recepted by other bracelets
+
+DEBUG (1): TIME 0:0:0.249389627 : a message is received from Mote 2
+	**************************MESSAGE*********************************
+		Payload: type: 0, info: BYTg6td7beggd67sa67v
+		Message for PAIRING request received. Mote address: 2
+		 !! WRONG BRACELET !! 
+
+DEBUG (0): TIME 0:0:0.249389627 : a message is received from Mote 2
+	**************************MESSAGE*********************************
+		Payload: type: 0, info: BYTg6td7beggd67sa67v
+		Message for PAIRING request received. Mote address: 2
+		 !! WRONG BRACELET !! 
+
+DEBUG (3): TIME 0:0:0.249389627 : a message is received from Mote 2
+	**************************MESSAGE*********************************
+		Payload: type: 0, info: BYTg6td7beggd67sa67v
+		Message of PAIRING request received. Mote address: 2
+		BRACELET FOUND!
+
+DEBUG (3): Sending CONFIRMATION to mote address 2
+
+DEBUG (2): Message sent!
+DEBUG (2): Random key recepted by other bracelets
+
+DEBUG (2): TIME 0:0:0.251510587 : a message is received from Mote 1
+	**************************MESSAGE*********************************
+		Payload: type: 0, info: HDSGAhdyqgi76h7dedgh
+		Message for PAIRING request received. Mote address: 1
+		 !! WRONG BRACELET !! 
+
+DEBUG (0): TIME 0:0:0.251510587 : a message is received from Mote 1
+	**************************MESSAGE*********************************
+		Payload: type: 0, info: HDSGAhdyqgi76h7dedgh
+		Message of PAIRING request received. Mote address: 1
+		BRACELET FOUND!
+
+DEBUG (3): TIME 0:0:0.251510587 : a message is received from Mote 1
+	**************************MESSAGE*********************************
+		Payload: type: 0, info: HDSGAhdyqgi76h7dedgh
+		Message for PAIRING request received. Mote address: 1
+		 !! WRONG BRACELET !! 
+
+DEBUG (1): Message sent!
+DEBUG (1): Random key recepted by other bracelets
+
+DEBUG (1): TIME 0:0:0.254058790 : a message is received from Mote 0
+	**************************MESSAGE*********************************
+		Payload: type: 0, info: HDSGAhdyqgi76h7dedgh
+		Message of PAIRING request received. Mote address: 0
+		BRACELET FOUND!
+
+DEBUG (1): Sending CONFIRMATION to mote address 0
+
+DEBUG (3): TIME 0:0:0.254058790 : a message is received from Mote 0
+	**************************MESSAGE*********************************
+		Payload: type: 0, info: HDSGAhdyqgi76h7dedgh
+		Message for PAIRING request received. Mote address: 0
+		 !! WRONG BRACELET !! 
+
+DEBUG (2): TIME 0:0:0.254058790 : a message is received from Mote 0
+	**************************MESSAGE*********************************
+		Payload: type: 0, info: HDSGAhdyqgi76h7dedgh
+		Message for PAIRING request received. Mote address: 0
+		 !! WRONG BRACELET !! 
+
+DEBUG (0): Message sent!
+DEBUG (0): Random key recepted by other bracelets
+
+DEBUG (2): TIME 0:0:0.257553032 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 1, info: BYTg6td7beggd67sa67v
+		Message for CONFIRMATION received
+
+
+DEBUG (2): It's Parent bracelet
+
+DEBUG (3): Message sent!
+DEBUG (3): Pairing ACK received at time 0:0:0.257720878
+
+DEBUG (3): It's Child bracelet
+
+DEBUG (0): TIME 0:0:0.261794950 : a message is received from Mote 1
+	**************************MESSAGE*********************************
+		Payload: type: 1, info: HDSGAhdyqgi76h7dedgh
+		Message for CONFIRMATION received
+
+
+DEBUG (0): It's Parent bracelet
+
+DEBUG (1): Message sent!
+DEBUG (1): Pairing ACK received at time 0:0:0.261962796
+
+DEBUG (1): It's Child bracelet
+
+DEBUG (3): Timer of 10s is FIRED at TIME 0:0:10.022460947
+	**************************MESSAGE*********************************
+		Sensor kinematic status: STANDING
+		Child Position X: 196, Y: 103
+
+DEBUG (3): Radio: sending INFO packet to mote 2 
+
+DEBUG (1): Timer of 10s is FIRED at TIME 0:0:10.027343760
+	**************************MESSAGE*********************************
+		Sensor kinematic status: WALKING
+		Child Position X: 226, Y: 179
+
+DEBUG (1): Radio: sending INFO packet to mote 0 
+
+DEBUG (2): TIME 0:0:10.030319188 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: STANDING
+		Kinematic message received
+		Sensor kinematic status: STANDING
+		Child Position X: 196, Y: 103
+
+DEBUG (3): Message sent!
+DEBUG (3): COMPLETE: ACK received at time 0:0:10.030487033
+
+DEBUG (0): TIME 0:0:10.032318106 : a message is received from Mote 1
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: WALKING
+		Kinematic message received
+		Sensor kinematic status: WALKING
+		Child Position X: 226, Y: 179
+
+DEBUG (1): Message sent!
+DEBUG (1): COMPLETE: ACK received at time 0:0:10.032485951
+
+DEBUG (3): Timer of 10s is FIRED at TIME 0:0:19.788085947
+	**************************MESSAGE*********************************
+		Sensor kinematic status: RUNNING
+		Child Position X: 10, Y: 32
+
+DEBUG (3): Radio: sending INFO packet to mote 2 
+
+DEBUG (1): Timer of 10s is FIRED at TIME 0:0:19.792968760
+	**************************MESSAGE*********************************
+		Sensor kinematic status: RUNNING
+		Child Position X: 5, Y: 144
+
+DEBUG (1): Radio: sending INFO packet to mote 0 
+
+DEBUG (2): TIME 0:0:19.793792711 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: RUNNING
+		Kinematic message received
+		Sensor kinematic status: RUNNING
+		Child Position X: 10, Y: 32
+
+DEBUG (3): Message sent!
+DEBUG (3): COMPLETE: ACK received at time 0:0:19.793960557
+
+DEBUG (0): TIME 0:0:19.797531121 : a message is received from Mote 1
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: RUNNING
+		Kinematic message received
+		Sensor kinematic status: RUNNING
+		Child Position X: 5, Y: 144
+
+DEBUG (1): Message sent!
+DEBUG (1): COMPLETE: ACK received at time 0:0:19.797698967
+
+DEBUG (3): Timer of 10s is FIRED at TIME 0:0:29.553710947
+	**************************MESSAGE*********************************
+		Sensor kinematic status: STANDING
+		Child Position X: 250, Y: 14
+
+DEBUG (3): Radio: sending INFO packet to mote 2 
+
+DEBUG (2): TIME 0:0:29.558074945 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: STANDING
+		Kinematic message received
+		Sensor kinematic status: STANDING
+		Child Position X: 250, Y: 14
+
+DEBUG (3): Message sent!
+DEBUG (3): COMPLETE: ACK received at time 0:0:29.558242791
+
+DEBUG (1): Timer of 10s is FIRED at TIME 0:0:29.558593760
+	**************************MESSAGE*********************************
+		Sensor kinematic status: STANDING
+		Child Position X: 253, Y: 135
+
+DEBUG (1): Radio: sending INFO packet to mote 0 
+
+DEBUG (0): TIME 0:0:29.564910871 : a message is received from Mote 1
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: STANDING
+		Kinematic message received
+		Sensor kinematic status: STANDING
+		Child Position X: 253, Y: 135
+
+DEBUG (1): Message sent!
+DEBUG (1): COMPLETE: ACK received at time 0:0:29.565078717
+
+DEBUG (3): Timer of 10s is FIRED at TIME 0:0:39.319335947
+	**************************MESSAGE*********************************
+		Sensor kinematic status: RUNNING
+		Child Position X: 97, Y: 86
+
+DEBUG (3): Radio: sending INFO packet to mote 2 
+
+DEBUG (1): Timer of 10s is FIRED at TIME 0:0:39.324218760
+	**************************MESSAGE*********************************
+		Sensor kinematic status: WALKING
+		Child Position X: 48, Y: 171
+
+DEBUG (1): Radio: sending INFO packet to mote 0 
+
+DEBUG (2): TIME 0:0:39.328384366 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: RUNNING
+		Kinematic message received
+		Sensor kinematic status: RUNNING
+		Child Position X: 97, Y: 86
+
+DEBUG (3): Message sent!
+DEBUG (3): COMPLETE: ACK received at time 0:0:39.328552212
+
+DEBUG (0): TIME 0:0:39.333999596 : a message is received from Mote 1
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: WALKING
+		Kinematic message received
+		Sensor kinematic status: WALKING
+		Child Position X: 48, Y: 171
+
+DEBUG (1): Message sent!
+DEBUG (1): COMPLETE: ACK received at time 0:0:39.334167442
+
+DEBUG (3): Timer of 10s is FIRED at TIME 0:0:49.084960947
+	**************************MESSAGE*********************************
+		Sensor kinematic status: WALKING
+		Child Position X: 136, Y: 204
+
+DEBUG (3): Radio: sending INFO packet to mote 2 
+
+DEBUG (1): Timer of 10s is FIRED at TIME 0:0:49.089843760
+	**************************MESSAGE*********************************
+		Sensor kinematic status: RUNNING
+		Child Position X: 196, Y: 102
+
+DEBUG (1): Radio: sending INFO packet to mote 0 
+
+DEBUG (2): TIME 0:0:49.093475312 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: WALKING
+		Kinematic message received
+		Sensor kinematic status: WALKING
+		Child Position X: 136, Y: 204
+
+DEBUG (3): Message sent!
+DEBUG (3): COMPLETE: ACK received at time 0:0:49.093643157
+
+DEBUG (0): TIME 0:0:49.096679667 : a message is received from Mote 1
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: RUNNING
+		Kinematic message received
+		Sensor kinematic status: RUNNING
+		Child Position X: 196, Y: 102
+
+DEBUG (1): Message sent!
+DEBUG (1): COMPLETE: ACK received at time 0:0:49.096847513
+
+DEBUG (3): Timer of 10s is FIRED at TIME 0:0:58.850585947
+	**************************MESSAGE*********************************
+		Sensor kinematic status: RUNNING
+		Child Position X: 94, Y: 68
+
+DEBUG (3): Radio: sending INFO packet to mote 2 
+
+DEBUG (1): Timer of 10s is FIRED at TIME 0:0:58.855468760
+	**************************MESSAGE*********************************
+		Sensor kinematic status: WALKING
+		Child Position X: 47, Y: 34
+
+DEBUG (1): Radio: sending INFO packet to mote 0 
+
+DEBUG (2): TIME 0:0:58.856353746 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: RUNNING
+		Kinematic message received
+		Sensor kinematic status: RUNNING
+		Child Position X: 94, Y: 68
+
+DEBUG (3): Message sent!
+DEBUG (3): COMPLETE: ACK received at time 0:0:58.856521591
+
+DEBUG (0): TIME 0:0:58.864364592 : a message is received from Mote 1
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: WALKING
+		Kinematic message received
+		Sensor kinematic status: WALKING
+		Child Position X: 47, Y: 34
+
+DEBUG (1): Message sent!
+DEBUG (1): COMPLETE: ACK received at time 0:0:58.864532437
+
+DEBUG (3): Timer of 10s is FIRED at TIME 0:1:8.616210947
+	**************************MESSAGE*********************************
+		Sensor kinematic status: STANDING
+		Child Position X: 80, Y: 189
+
+DEBUG (3): Radio: sending INFO packet to mote 2 
+
+DEBUG (2): TIME 0:1:8.626449545 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: STANDING
+		Kinematic message received
+		Sensor kinematic status: STANDING
+		Child Position X: 80, Y: 189
+
+DEBUG (3): Message sent!
+DEBUG (3): COMPLETE: ACK received at time 0:1:8.626617390
+
+DEBUG (3): Timer of 10s is FIRED at TIME 0:1:18.381835947
+	**************************MESSAGE*********************************
+		Sensor kinematic status: STANDING
+		Child Position X: 182, Y: 23
+
+DEBUG (3): Radio: sending INFO packet to mote 2 
+
+DEBUG (2): TIME 0:1:18.392852738 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: STANDING
+		Kinematic message received
+		Sensor kinematic status: STANDING
+		Child Position X: 182, Y: 23
+
+DEBUG (3): Message sent!
+DEBUG (3): COMPLETE: ACK received at time 0:1:18.393020584
+
+DEBUG (3): Timer of 10s is FIRED at TIME 0:1:28.147460947
+	**************************MESSAGE*********************************
+		Sensor kinematic status: WALKING
+		Child Position X: 214, Y: 172
+
+DEBUG (3): Radio: sending INFO packet to mote 2 
+
+DEBUG (2): TIME 0:1:28.156829799 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: WALKING
+		Kinematic message received
+		Sensor kinematic status: WALKING
+		Child Position X: 214, Y: 172
+
+DEBUG (3): Message sent!
+DEBUG (3): COMPLETE: ACK received at time 0:1:28.156997645
+
+DEBUG (3): Timer of 10s is FIRED at TIME 0:1:37.913085947
+	**************************MESSAGE*********************************
+		Sensor kinematic status: WALKING
+		Child Position X: 33, Y: 30
+
+DEBUG (3): Radio: sending INFO packet to mote 2 
+
+DEBUG (2): TIME 0:1:37.921829192 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: WALKING
+		Kinematic message received
+		Sensor kinematic status: WALKING
+		Child Position X: 33, Y: 30
+
+DEBUG (3): Message sent!
+DEBUG (3): COMPLETE: ACK received at time 0:1:37.921997038
+
+DEBUG (3): Timer of 10s is FIRED at TIME 0:1:47.678710947
+	**************************MESSAGE*********************************
+		Sensor kinematic status: FALLING
+		Child Position X: 75, Y: 33
+
+DEBUG (3): Radio: sending INFO packet to mote 2 
+
+DEBUG (2): TIME 0:1:47.684829696 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: FALLING
+		Kinematic message received
+		Sensor kinematic status: FALLING
+		Child Position X: 75, Y: 33
+
+
+		F A L L I N G   A L E R T
+DEBUG (2): ATTENTION PLEASE This is a FALLING  ALERT!
+DEBUG (2): THE CHILD HAS FALLEN!
+		F A L L I N G   A L E R T
+
+DEBUG (3): Message sent!
+DEBUG (3): COMPLETE: ACK received at time 0:1:47.684997541
+
+DEBUG (3): Timer of 10s is FIRED at TIME 0:1:57.444335947
+	**************************MESSAGE*********************************
+		Sensor kinematic status: STANDING
+		Child Position X: 138, Y: 5
+
+DEBUG (3): Radio: sending INFO packet to mote 2 
+
+DEBUG (3): Message sent!
+ERROR (3): ATTENTION: ACK EXCHANGE phase not received, try again
+
+DEBUG (3): Radio: sending INFO packet to mote 2 
+
+DEBUG (2): TIME 0:1:57.455215410 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: STANDING
+		Kinematic message received
+		Sensor kinematic status: STANDING
+		Child Position X: 138, Y: 5
+
+DEBUG (3): Message sent!
+DEBUG (3): COMPLETE: ACK received at time 0:1:57.455383256
+
+DEBUG (0): Timer of 60s is FIRED at TIME: 0:1:57.458007822
+
+		M I S S I N G   A L E R T
+DEBUG (0): TIMEOUT
+DEBUG (0): ATTENTION PLEASE This is a MISSING  ALERT!
+DEBUG (0): LAST KNOWN POSITION OF THE CHILD  X: 47, Y: 34
+		M I S S I N G   A L E R T
+
+DEBUG (3): Timer of 10s is FIRED at TIME 0:2:7.209960947
+	**************************MESSAGE*********************************
+		Sensor kinematic status: STANDING
+		Child Position X: 55, Y: 143
+
+DEBUG (3): Radio: sending INFO packet to mote 2 
+
+DEBUG (2): TIME 0:2:7.215438830 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: STANDING
+		Kinematic message received
+		Sensor kinematic status: STANDING
+		Child Position X: 55, Y: 143
+
+DEBUG (3): Message sent!
+DEBUG (3): COMPLETE: ACK received at time 0:2:7.215606676
+
+DEBUG (3): Timer of 10s is FIRED at TIME 0:2:16.975585947
+	**************************MESSAGE*********************************
+		Sensor kinematic status: WALKING
+		Child Position X: 124, Y: 195
+
+DEBUG (3): Radio: sending INFO packet to mote 2 
+
+DEBUG (2): TIME 0:2:16.983352635 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: WALKING
+		Kinematic message received
+		Sensor kinematic status: WALKING
+		Child Position X: 124, Y: 195
+
+DEBUG (3): Message sent!
+DEBUG (3): COMPLETE: ACK received at time 0:2:16.983520481
+
+DEBUG (3): Timer of 10s is FIRED at TIME 0:2:26.741210947
+	**************************MESSAGE*********************************
+		Sensor kinematic status: WALKING
+		Child Position X: 35, Y: 182
+
+DEBUG (3): Radio: sending INFO packet to mote 2 
+
+DEBUG (2): TIME 0:2:26.749664277 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: WALKING
+		Kinematic message received
+		Sensor kinematic status: WALKING
+		Child Position X: 35, Y: 182
+
+DEBUG (3): Message sent!
+DEBUG (3): COMPLETE: ACK received at time 0:2:26.749832123
+
+DEBUG (1): ATTENTION: Radio device is ready
+DEBUG (1): ***PAIRING Phase has started***
+
+	**************************PAIRING*********************************
+DEBUG (1): ATTENTION: TimerPairing is fired at TIME: 0:2:30.270507822
+DEBUG (1): Preload KEY=HDSGAhdyqgi76h7dedgh , SENDING PAIRING MESSAGE 
+
+DEBUG (3): TIME 0:2:30.280975290 : a message is received from Mote 1
+	**************************MESSAGE*********************************
+		Payload: type: 0, info: HDSGAhdyqgi76h7dedgh
+		Message for PAIRING request received. Mote address: 1
+		 !! WRONG BRACELET !! 
+
+DEBUG (2): TIME 0:2:30.280975290 : a message is received from Mote 1
+	**************************MESSAGE*********************************
+		Payload: type: 0, info: HDSGAhdyqgi76h7dedgh
+		Message for PAIRING request received. Mote address: 1
+		 !! WRONG BRACELET !! 
+
+DEBUG (0): TIME 0:2:30.280975290 : a message is received from Mote 1
+	**************************MESSAGE*********************************
+		Payload: type: 0, info: HDSGAhdyqgi76h7dedgh
+		Message of PAIRING request received. Mote address: 1
+		BRACELET FOUND!
+
+DEBUG (0): Sending CONFIRMATION to mote address 1
+
+DEBUG (1): Message sent!
+DEBUG (1): Random key recepted by other bracelets
+
+DEBUG (1): TIME 0:2:30.290527236 : a message is received from Mote 0
+	**************************MESSAGE*********************************
+		Payload: type: 1, info: HDSGAhdyqgi76h7dedgh
+		Message for CONFIRMATION received
+
+
+DEBUG (1): It's Child bracelet
+
+DEBUG (0): Message sent!
+DEBUG (0): Pairing ACK received at time 0:2:30.290695082
+
+DEBUG (0): It's Parent bracelet
+
+DEBUG (3): Timer of 10s is FIRED at TIME 0:2:36.506835947
+	**************************MESSAGE*********************************
+		Sensor kinematic status: RUNNING
+		Child Position X: 50, Y: 47
+
+DEBUG (3): Radio: sending INFO packet to mote 2 
+
+DEBUG (2): TIME 0:2:36.517272908 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: RUNNING
+		Kinematic message received
+		Sensor kinematic status: RUNNING
+		Child Position X: 50, Y: 47
+
+DEBUG (3): Message sent!
+DEBUG (3): COMPLETE: ACK received at time 0:2:36.517440754
+
+DEBUG (1): Timer of 10s is FIRED at TIME 0:2:40.055664072
+	**************************MESSAGE*********************************
+		Sensor kinematic status: WALKING
+		Child Position X: 226, Y: 179
+
+DEBUG (1): Radio: sending INFO packet to mote 0 
+
+DEBUG (0): TIME 0:2:40.058090215 : a message is received from Mote 1
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: WALKING
+		Kinematic message received
+		Sensor kinematic status: WALKING
+		Child Position X: 226, Y: 179
+
+DEBUG (1): Message sent!
+DEBUG (1): COMPLETE: ACK received at time 0:2:40.058258061
+
+DEBUG (3): Timer of 10s is FIRED at TIME 0:2:46.272460947
+	**************************MESSAGE*********************************
+		Sensor kinematic status: WALKING
+		Child Position X: 213, Y: 231
+
+DEBUG (3): Radio: sending INFO packet to mote 2 
+
+DEBUG (2): TIME 0:2:46.279342631 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: WALKING
+		Kinematic message received
+		Sensor kinematic status: WALKING
+		Child Position X: 213, Y: 231
+
+DEBUG (3): Message sent!
+DEBUG (3): COMPLETE: ACK received at time 0:2:46.279510476
+
+DEBUG (1): Timer of 10s is FIRED at TIME 0:2:49.821289072
+	**************************MESSAGE*********************************
+		Sensor kinematic status: RUNNING
+		Child Position X: 5, Y: 144
+
+DEBUG (1): Radio: sending INFO packet to mote 0 
+
+DEBUG (0): TIME 0:2:49.827743512 : a message is received from Mote 1
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: RUNNING
+		Kinematic message received
+		Sensor kinematic status: RUNNING
+		Child Position X: 5, Y: 144
+
+DEBUG (1): Message sent!
+DEBUG (1): COMPLETE: ACK received at time 0:2:49.827911358
+
+DEBUG (3): Timer of 10s is FIRED at TIME 0:2:56.038085947
+	**************************MESSAGE*********************************
+		Sensor kinematic status: STANDING
+		Child Position X: 16, Y: 225
+
+DEBUG (3): Radio: sending INFO packet to mote 2 
+
+DEBUG (2): TIME 0:2:56.042282100 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: STANDING
+		Kinematic message received
+		Sensor kinematic status: STANDING
+		Child Position X: 16, Y: 225
+
+DEBUG (3): Message sent!
+DEBUG (3): COMPLETE: ACK received at time 0:2:56.042449945
+
+DEBUG (1): Timer of 10s is FIRED at TIME 0:2:59.586914072
+	**************************MESSAGE*********************************
+		Sensor kinematic status: STANDING
+		Child Position X: 253, Y: 135
+
+DEBUG (1): Radio: sending INFO packet to mote 0 
+
+DEBUG (0): TIME 0:2:59.597518879 : a message is received from Mote 1
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: STANDING
+		Kinematic message received
+		Sensor kinematic status: STANDING
+		Child Position X: 253, Y: 135
+
+DEBUG (1): Message sent!
+DEBUG (1): COMPLETE: ACK received at time 0:2:59.597686724
+
+DEBUG (3): Timer of 10s is FIRED at TIME 0:3:5.803710947
+	**************************MESSAGE*********************************
+		Sensor kinematic status: FALLING
+		Child Position X: 136, Y: 113
+
+DEBUG (3): Radio: sending INFO packet to mote 2 
+
+DEBUG (2): TIME 0:3:5.808929432 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: FALLING
+		Kinematic message received
+		Sensor kinematic status: FALLING
+		Child Position X: 136, Y: 113
+
+
+		F A L L I N G   A L E R T
+DEBUG (2): ATTENTION PLEASE This is a FALLING  ALERT!
+DEBUG (2): THE CHILD HAS FALLEN!
+		F A L L I N G   A L E R T
+
+DEBUG (3): Message sent!
+DEBUG (3): COMPLETE: ACK received at time 0:3:5.809097278
+
+DEBUG (1): Timer of 10s is FIRED at TIME 0:3:9.352539072
+	**************************MESSAGE*********************************
+		Sensor kinematic status: WALKING
+		Child Position X: 48, Y: 171
+
+DEBUG (1): Radio: sending INFO packet to mote 0 
+
+DEBUG (0): TIME 0:3:9.358062731 : a message is received from Mote 1
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: WALKING
+		Kinematic message received
+		Sensor kinematic status: WALKING
+		Child Position X: 48, Y: 171
+
+DEBUG (1): Message sent!
+DEBUG (1): COMPLETE: ACK received at time 0:3:9.358230577
+
+DEBUG (3): Timer of 10s is FIRED at TIME 0:3:15.569335947
+	**************************MESSAGE*********************************
+		Sensor kinematic status: WALKING
+		Child Position X: 107, Y: 156
+
+DEBUG (3): Radio: sending INFO packet to mote 2 
+
+DEBUG (2): TIME 0:3:15.577316257 : a message is received from Mote 3
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: WALKING
+		Kinematic message received
+		Sensor kinematic status: WALKING
+		Child Position X: 107, Y: 156
+
+DEBUG (3): Message sent!
+DEBUG (3): COMPLETE: ACK received at time 0:3:15.577484103
+
+DEBUG (1): Timer of 10s is FIRED at TIME 0:3:19.118164072
+	**************************MESSAGE*********************************
+		Sensor kinematic status: RUNNING
+		Child Position X: 196, Y: 102
+
+DEBUG (1): Radio: sending INFO packet to mote 0 
+
+DEBUG (0): TIME 0:3:19.127166715 : a message is received from Mote 1
+	**************************MESSAGE*********************************
+		Payload: type: 2, info: RUNNING
+		Kinematic message received
+		Sensor kinematic status: RUNNING
+		Child Position X: 196, Y: 102
+
+DEBUG (1): Message sent!
+DEBUG (1): COMPLETE: ACK received at time 0:3:19.127334561
+
+
+
+
+Simulation finished!
+
